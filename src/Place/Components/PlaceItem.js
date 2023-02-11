@@ -48,7 +48,11 @@ const PlaceItem = (props) => {
   };
 
   const openShowMap = () => setShowMap(true);
-  const closeShowMap = () => setShowMap(false);
+  const closeShowMap = (e) => {
+    e.preventDefault();
+
+    setShowMap(false);
+  };
 
   return (
     <>
